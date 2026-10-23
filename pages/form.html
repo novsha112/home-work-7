@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home-work-7</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Форма зворотного зв'язку</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="nav-link" href="../index.html">Головна сторінка</a></li>
+          <li>
+            <a class="nav-link" href="#feedback-form">Перейти до форми</a>
+          </li>
+          <li>
+            <a class="nav-link" href="./tables.html">Таблиці</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="feedback-form">
+        <h2>Заповніть форму</h2>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Особисті дані</legend>
+
+            <label>
+              Ім'я та прізвище:
+              <input type="text" name="fullname" />
+            </label>
+
+            <label>
+              Електронна пошта:
+              <input type="email" name="email" />
+            </label>
+
+            <label>
+              Телефон:
+              <input type="tel" name="phone" />
+            </label>
+
+            <label>
+              Дата народження:
+              <input type="date" name="birthdate" />
+            </label>
+
+            <label>
+              Пароль:
+              <input type="password" name="password" />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Ваша стать</legend>
+            <label>
+              <input type="radio" name="gender" value="male" />
+              Чоловіча
+            </label>
+            <label>
+              <input type="radio" name="gender" value="female" />
+              Жіноча
+            </label>
+            <label>
+              <input type="radio" name="gender" value="other" />
+              Інше
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тема звернення</legend>
+            <label>
+              Оберіть тему:
+              <select name="topic">
+                <option value="cooperation">Співпраця</option>
+                <option value="question">Запитання</option>
+                <option value="feedback">Відгук</option>
+                <option value="other">Інше</option>
+              </select>
+            </label>
+
+            <label>
+              Оцінка сайту (1-10):
+              <input type="range" name="rating" min="1" max="10" value="5" />
+            </label>
+
+            <label>
+              Улюблений колір:
+              <input type="color" name="color" value="#2f6fed" />
+            </label>
+
+            <label>
+              Прикріпити файл:
+              <input type="file" name="attachment" />
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Інтереси</legend>
+            <label>
+              <input type="checkbox" name="interests" value="web" />
+              Вебтехнології
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="gis" />
+              Геоінформаційні системи
+            </label>
+            <label>
+              <input type="checkbox" name="interests" value="ai" />
+              Штучний інтелект
+            </label>
+            <label>
+              <input type="checkbox" name="agreement" value="yes" />
+              Погоджуюсь на обробку даних
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Повідомлення</legend>
+            <label>
+              Ваше повідомлення:
+              <textarea name="message" rows="5" cols="40"></textarea>
+            </label>
+          </fieldset>
+
+          <button type="submit" class="form-button">Надіслати</button>
+          <button type="reset" class="form-button">Очистити форму</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h2>&copy; Мої контакти</h2>
+      <address>
+        <a class="contact-link" href="mailto:nik.novsha@gmail.com"
+          >nik.novsha@gmail.com</a
+        >
+        <a class="contact-link" href="tel:+380991234567">+380991234567</a>
+      </address>
+    </footer>
+  </body>
+</html>
